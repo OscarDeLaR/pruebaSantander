@@ -1,0 +1,16 @@
+CREATE DATABASE pruebaSantander;
+
+USE pruebaSantander;
+
+CREATE TABLE proveedores (
+  id_proveedor INT NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(50) NOT NULL,
+  fecha_alta DATE NOT NULL,
+  id_cliente INT NOT NULL,
+  PRIMARY KEY (id_proveedor)
+);
+
+INSERT INTO proveedores (nombre, fecha_alta, id_cliente) VALUES
+('Coca-cola', '2000-07-11', 5),
+('Pepsi', '1999-03-30', 5),
+('Redbull', '2001-04-15', 6);
